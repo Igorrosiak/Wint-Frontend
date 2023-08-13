@@ -1,2 +1,2 @@
-# Wint-Frontend
-Frontend-Web to social-media with React Typescript
+# Wint
+Rede-Social para postagem de portfólios do ensino médio
