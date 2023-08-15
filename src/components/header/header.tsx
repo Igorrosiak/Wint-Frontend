@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 
 const Header = () => {
-    <header>
-        
-    </header>
+  return <header></header>;
 };
 
 export default Header;

@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 
 const Footer = () => {
-    <footer>
-        
-    </footer>
+  return <footer></footer>;
 };
 
 export default Footer;

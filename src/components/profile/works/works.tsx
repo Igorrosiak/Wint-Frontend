@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 
 const Works = () => {
-    <section id="works">
-        
-    </section>
+    return <section id="works"></section>
 };
 
 export default Works;
