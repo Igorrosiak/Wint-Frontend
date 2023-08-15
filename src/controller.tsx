@@ -4,9 +4,9 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 import { useUserContext } from "./contexts/auth";
 
-import Profile from "./pages/profile/profilePage";
-import SignIn from "./pages/signIn/signInPage";
-import SignUp from "./pages/signUp/signUpPage";
+import Profile from "./pages/profile/profile";
+import SignIn from "./pages/signIn/signIn";
+import SignUp from "./pages/signUp/signUp";
 
 function Controller() {
   const { loggedStatus, setLoggedStatus } = useUserContext();
