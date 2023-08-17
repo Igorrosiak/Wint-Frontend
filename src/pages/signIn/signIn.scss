@@ -1,0 +1,27 @@
+@media screen and (max-width: 992px) {
+  .sign-in-page {
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    .aside-logo {
+      width: 35vw;
+      margin-bottom: 30px;
+    }
+
+    .aside-form {
+      width: 90vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aside-logo {
+    width: 45vw !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .aside-logo {
+    width: 55vw !important;
+  }
+}
