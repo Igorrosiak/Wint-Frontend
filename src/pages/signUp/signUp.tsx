@@ -1,18 +1,18 @@
 import { useState } from "react";
-import "./signUp.css"
 import wintLogo from "../../assets/wintLogo.png";
+import "./signUp.scss"
 
 const SignUp = () => {
   const [activeInput, setActiveInput] = useState<boolean>(false);
 
   return (
-    <div className="w-[100vw] h-[100vh] overflow-hidden flex items-center justify-between bg-[#222222] text-white">
-      <aside className="w-1/2">
+    <div className="sign-up-page w-[100vw] h-[100vh] overflow-hidden flex items-center justify-between bg-[#222222] text-white">
+      <aside className="aside-logo w-1/2">
         <img src={wintLogo} alt="Wint Logotype" className="ml-auto" />
       </aside>
-      <aside className="w-2/5 mx-auto">
-        <h1 className="mb-3 text-6xl text-center font-normal">Primeira vez?</h1>
-        <p className="mb-7 text-xl text-center text-gray-400">
+      <aside className="aside-form w-2/5 mx-auto">
+        <h1 className="mb-3 text-5xl text-center font-normal">Primeira vez?</h1>
+        <p className="mb-7 text-lg text-center text-gray-400">
           Preencha os dados abaixo para realizar seu cadastro.
         </p>
         <form className="flex flex-col max-w-xl m-auto">
