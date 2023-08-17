@@ -4,7 +4,7 @@
     justify-content: center;
 
     .aside-logo {
-      width: 35vw;
+      width: 300px;
       margin-bottom: 30px;
     }
 
@@ -14,14 +14,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .aside-logo {
-    width: 45vw !important;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .aside-logo {
-    width: 55vw !important;
+@media screen and (max-width: 450px) {
+  .sign-in-page {
+    .aside-logo {
+      width: 250px;
+    }
   }
 }
