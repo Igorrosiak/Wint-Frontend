@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const ProfessionalExperience = () => {
+const ProfessionalExperiences = () => {
     return <section id="professionalExperience"></section>
 };
 
-export default ProfessionalExperience;
+export default ProfessionalExperiences;
