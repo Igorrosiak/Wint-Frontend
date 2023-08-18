@@ -1,9 +1,7 @@
-import moment from "moment";
 import { useEffect } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-
+import moment from "moment";
 import { useUserContext } from "./contexts/auth";
-
 import Profile from "./pages/profile/profile";
 import SignIn from "./pages/signIn/signIn";
 import SignUp from "./pages/signUp/signUp";
