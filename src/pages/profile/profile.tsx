@@ -1,4 +1,5 @@
 import Header from "../../components/header/header";
+import HeroBanner from "../../components/profile/heroBanner/heroBanner";
 import Skills from "../../components/profile/skills/skills";
 import Works from "../../components/profile/works/works";
 import ProfessionalExperience from "../../components/profile/professionalExperiences/professionalExperiences";
@@ -10,6 +11,7 @@ const Profile = () => {
   return (
     <>
       <Header />
+      <HeroBanner />
       <Skills />
       <Works />
       <ProfessionalExperience />
