@@ -85,7 +85,7 @@ const Header = () => {
 
   return (
     <header className="w-full">
-      <nav className="navbar h-[10vh] mt-5 flex justify-around items-center">
+      <nav className="navbar h-[10vh] pt-5 flex justify-around items-center">
         <aside className="w-3/12">
           <img
             src={logoWint}
