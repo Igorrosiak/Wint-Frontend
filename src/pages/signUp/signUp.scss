@@ -2,27 +2,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(1) brightness(100%) sepia(1000%) saturate(0) hue-rotate(20deg);
 }
-
-@media screen and (max-width: 992px) {
-  .sign-up-page {
-    flex-direction: column;
-    justify-content: center;
-
-    .aside-logo {
-      width: 200px;
-      margin-bottom: 30px;
-    }
-
-    .aside-form {
-      width: 90vw;
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .sign-up-page {
-    .aside-logo {
-      width: 150px;
-    }
-  }
-}
