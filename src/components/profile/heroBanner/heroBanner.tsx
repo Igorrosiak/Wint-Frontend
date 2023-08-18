@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
 import { BsInstagram, BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs"
 import profileImage from "../../../assets/profile-image.png"
 
 const HeroBanner = () => {
   return (
-    <section className="h-[90vh] min-[768px]:pb-40 flex justify-center items-center max-[768px]:flex-col-reverse">
+    <section className="h-[90vh] min-[768px]:pb-32 flex justify-center items-center max-[768px]:flex-col-reverse">
       <aside className="w-1/3 max-[768px]:w-[85vw] max-[768px]:text-center m-auto">
         <h3 className="text-gray-400">- H E L L O W O R L D</h3>
         <h1 className="my-4 text-5xl font-bold">Gabriela Senna</h1>
