@@ -107,6 +107,9 @@ const Header = () => {
           <li>
             <a href="#blogs">Blog</a>
           </li>
+          <li>
+            <a href="#recommendations">Recomendações</a>
+          </li>
         </ul>
         <aside className="lg:w-3/12 flex justify-center items-center gap-4">
           <MdOutlineDarkMode size={25} className="cursor-pointer" />
