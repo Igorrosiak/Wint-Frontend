@@ -129,13 +129,16 @@ const Header = () => {
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#works">Portfolios</a>
+            <a href="#curriculum">Portfolios</a>
           </li>
           <li>
-            <a href="#professionalExperiences">Experiências</a>
+            <a href="#works">Experiências</a>
           </li>
           <li>
             <a href="#blogs">Blog</a>
+          </li>
+          <li>
+            <a href="#recommendations">Recomendações</a>
           </li>
         </ul>
       )}
