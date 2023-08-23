@@ -43,7 +43,7 @@ const Blog = () => {
               <img
                 src={blog.image}
                 alt="Blog"
-                className="w-full h-[400px] cursor-pointer rounded-t-xl"
+                className="w-full h-[400px] object-cover cursor-pointer rounded-t-xl"
               />
               <div className="w-full p-5 flex flex-col justify-center items-start">
                 <h4 className="font-semibold text-xl text-start">{blog.name}</h4>
