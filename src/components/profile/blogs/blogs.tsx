@@ -46,7 +46,7 @@ const Blog = () => {
                 className="w-full h-[400px] cursor-pointer rounded-t-xl"
               />
               <div className="w-full p-5 flex flex-col justify-center items-start">
-                <h4 className="font-semibold text-xl">{blog.name}</h4>
+                <h4 className="font-semibold text-xl text-start">{blog.name}</h4>
                 <p className="my-3 indent-3 text-gray-600">{blog.date}</p>
                 <p className="text-justify text-gray-600">{blog.description}</p>
                 <a href="#" className="w-full mt-3 text-center">Continue Lendo</a>
