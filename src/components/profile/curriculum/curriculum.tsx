@@ -25,7 +25,7 @@ const Curriculum = () => {
       className="w-[80%] mx-auto min-h-[60vh] py-14 flex flex-col justify-center items-start max-[300px]:w-[90%]"
     >
       <h3 className="text-gray-400">- C U R R I C U L U M</h3>
-      <h1 className="my-4 text-5xl font-bold">Portfólios</h1>
+      <h1 className="my-4 text-5xl font-bold max-md:text-4xl">Portfólios</h1>
 
       <div className="row-portfolios w-full mt-10 grid grid-cols-3 gap-10 max-w-xl:bg-green-600 max-xl:grid-cols-2 max-md:grid-cols-1">
         {portfolios.map((portfolio, index) => {

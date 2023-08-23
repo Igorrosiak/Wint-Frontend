@@ -29,11 +29,11 @@ const Recommendations = () => {
   return (
     <section
       id="recommendations"
-      className="min-h-[60vh] py-14 flex flex-col justify-center items-start bg-[#FBFBFB] max-[300px]:w-[90%]"
+      className="min-h-[60vh] py-14 flex flex-col justify-center items-start bg-[#FBFBFB]"
     >
-      <div className="w-[80%] mx-auto">
+      <div className="w-[80%] mx-auto max-[300px]:w-[90%]">
           <h3 className="text-gray-400">- R E C O M M E N D A T I O N S</h3>
-          <h1 className="my-4 text-5xl font-bold">Testemunhos</h1>
+          <h1 className="my-4 text-5xl font-bold max-md:text-4xl">Testemunhos</h1>
           <div className="row-recommendations w-full mt-10 grid grid-cols-3 gap-10 max-w-xl:bg-green-600 max-xl:grid-cols-2 max-md:grid-cols-1">
             {recommendations.map((recommendation, index) => {
               return (

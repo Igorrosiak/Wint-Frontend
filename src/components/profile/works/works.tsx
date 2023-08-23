@@ -36,7 +36,7 @@ const Works = () => {
 
   return (
     <section id="works" className="min-h-[60vh] flex items-center justify-center py-12 bg-[#FBFBFB]">
-      <div className="w-[80%] grid grid-cols-2 mx-auto max-lg:grid-cols-1 max-lg:text-center">
+      <div className="w-[80%] grid grid-cols-2 mx-auto max-lg:grid-cols-1 max-lg:text-center max-[300px]:w-[90%]">
         <aside className="flex flex-col justify-center items-start max-lg:items-center">
           <h3 className="text-gray-400">- W O R K S</h3>
           <h1 className="my-4 text-5xl text-start font-bold max-md:text-4xl max-lg:text-center">

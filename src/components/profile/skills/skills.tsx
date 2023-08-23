@@ -33,7 +33,7 @@ const Skills = () => {
       className="min-h-[60vh] py-7 flex flex-col justify-center items-center bg-[#FBFBFB]"
     >
       <h3 className="text-gray-400">- S K I L L S</h3>
-      <h1 className="my-4 text-5xl text-center font-bold max-sm:text-3xl">Especializado(a) em...</h1>
+      <h1 className="my-4 text-5xl text-center font-bold max-md:text-4xl max-sm:text-3xl">Especializado(a) em...</h1>
 
       <div
         className={`row-skills w-[80%] gap-5 mt-10 grid grid-cols-4 max-w-xl:bg-green-600 max-[1600px]:grid-cols-3 max-[992px]:grid-cols-2 max-[600px]:grid-cols-1 max-[300px]:w-[90%]`}
