@@ -27,7 +27,7 @@ const Blog = () => {
 
   return (
     <section
-      id="blog"
+      id="blogs"
       className="w-[80%] mx-auto min-h-[60vh] py-14 flex flex-col justify-center items-start max-[300px]:w-[90%]"
     >
       <h3 className="text-gray-400">- T I P S</h3>
