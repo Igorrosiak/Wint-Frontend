@@ -46,7 +46,7 @@ const Recommendations = () => {
                     alt="Recommendation"
                     className="w-24 absolute cursor-pointer rounded-t-xl"
                   />
-                  <div className="w-full mt-16 bg-white shadow-xl rounded-xl p-5 flex flex-col justify-center items-start">
+                  <div className="w-full h-full mt-16 bg-white shadow-xl rounded-xl p-5 flex flex-col justify-center items-start">
                     <h4 className="mt-6 font-semibold text-xl max-md:mx-auto">{recommendation.name}</h4>
                     <p className="text-start text-gray-600 max-md:text-center max-md:mx-auto">"{recommendation.description}"</p>
                     <p className="mt-10 max-md:mx-auto">{recommendation.relationship}</p>
