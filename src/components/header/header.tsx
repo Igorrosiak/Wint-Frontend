@@ -3,7 +3,6 @@ import { BiMenu } from "react-icons/bi";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { TbUserSearch } from "react-icons/tb";
 import logoWint from "../../assets/wintLogo.svg";
-import "./header.scss";
 
 const Header = () => {
   const paths = [
