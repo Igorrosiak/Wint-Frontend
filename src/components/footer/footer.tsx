@@ -7,22 +7,17 @@ const Footer = () => {
         <BsInstagram
           size={28}
           className="cursor-pointer hover:scale-110 transition-all"
-        />
-        <BsFacebook
-          size={28}
-          className="cursor-pointer hover:scale-110 transition-all"
+          onClick={() => window.open("https://www.instagram.com/igor.rosiak/")}
         />
         <BsGithub
           size={28}
           className="cursor-pointer hover:scale-110 transition-all"
-        />
-        <BsTwitter
-          size={28}
-          className="cursor-pointer hover:scale-110 transition-all"
+          onClick={() => window.open("https://www.github.com/igorrosiak")}
         />
         <BsLinkedin
           size={28}
           className="cursor-pointer hover:scale-110 transition-all"
+          onClick={() => window.open("https://www.linkedin.com/in/igor-rosiak/")}
         />
       </div>
       <p className="text-center pt-4">© 2023 - Wint, crie já seu currículo interativo</p>
