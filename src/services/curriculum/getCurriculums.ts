@@ -1,8 +1,8 @@
 import { api } from '../../config/axios';
-import { Portfolio } from '../../types/portfolio';
+import { Curriculum } from '../../types/curriculum';
 
-export default function getPortfolios(): Promise<Array<Portfolio>> {
-  return api.get(`portfolios`).then(
+export default function getCurriculums(): Promise<Array<Curriculum>> {
+  return api.get(`curriculums`).then(
     (response) => {
       return response.data;
     },

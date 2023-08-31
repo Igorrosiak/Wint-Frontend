@@ -1,7 +1,7 @@
 import { api } from "../../config/axios";
 
-export default function deletePortfolio(id: string): Promise<number> {
-  return api.delete(`portfolio/${id}`).then(
+export default function deleteCurriculum(id: string): Promise<number> {
+  return api.delete(`curriculum/${id}`).then(
     (response) => {
       return response.status;
     },
