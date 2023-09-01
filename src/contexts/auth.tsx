@@ -6,7 +6,7 @@ import React, {
   useContext,
   useState,
 } from "react";
-import { User } from "../types/user";
+import { UserResponse } from "../types/user";
 
 interface PropsWithReactNode {
   children?: React.ReactNode;
@@ -14,9 +14,9 @@ interface PropsWithReactNode {
 
 interface UserContextData {
   loggedStatus?: boolean;
-  user?: User;
+  user?: UserResponse;
   setLoggedStatus: React.Dispatch<SetStateAction<boolean>>;
-  setUser: React.Dispatch<SetStateAction<User | undefined>>;
+  setUser: React.Dispatch<SetStateAction<UserResponse | undefined>>;
 }
 
 export const UserContext = createContext({} as UserContextData);
