@@ -1,7 +1,8 @@
 import { IconType } from "react-icons";
 import { MdBusinessCenter } from "react-icons/md";
+import { PropsId } from "../../../types/propsId";
 
-const Skills = () => {
+const Skills = ({userId}: PropsId) => {
   const skills = [
     {
       name: "UI/UX Design",

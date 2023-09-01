@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { PropsId } from "../../../types/propsId";
 import recommendationImage from "../../../assets/recommendation-image.png";
 
-const Recommendations = () => {
+const Recommendations = ({userId}: PropsId) => {
   const recommendations = [
     {
       image: recommendationImage,

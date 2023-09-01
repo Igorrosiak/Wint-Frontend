@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { PropsId } from "../../../types/propsId";
 import { Work } from "../../../types/work";
 
-const Works = () => {
+const Works = ({userId}: PropsId) => {
   const works = [
     {
       id: "asoijfoisfjio",

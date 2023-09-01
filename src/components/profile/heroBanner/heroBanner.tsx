@@ -1,7 +1,8 @@
 import { BsInstagram, BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs"
+import { PropsId } from "../../../types/propsId";
 import profileImage from "../../../assets/profile-image.png"
 
-const HeroBanner = () => {
+const HeroBanner = ({userId}: PropsId) => {
   return (
     <section className="h-[90vh] min-[768px]:pb-32 flex justify-center items-center max-[768px]:flex-col-reverse">
       <aside className="w-1/3 max-[768px]:w-[85vw] max-[768px]:text-center m-auto">

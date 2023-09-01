@@ -1,6 +1,7 @@
 import blogImage from "../../../assets/blog-image.png";
+import { PropsId } from "../../../types/propsId";
 
-const Blog = () => {
+const Blog = ({userId}: PropsId) => {
   const blogs = [
     {
       name: "Como desenvolver um protótipo interativo",

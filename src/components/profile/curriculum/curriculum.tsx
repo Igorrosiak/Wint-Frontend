@@ -1,6 +1,7 @@
 import portfolioImage from "../../../assets/cibersecurity-image.png";
+import { PropsId } from "../../../types/propsId";
 
-const Curriculum = () => {
+const Curriculum = ({userId}: PropsId) => {
   const portfolios = [
     {
       name: "Ciber Segurança",
