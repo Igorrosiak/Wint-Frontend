@@ -1,7 +1,7 @@
 import { api } from '../../config/axios';
-import { User } from '../../types/user';
+import { UserRequest, UserResponse } from '../../types/user';
 
-export default function postUser(body: User): Promise<User> {
+export default function postUser(body: UserRequest): Promise<UserResponse> {
   return api.post(`user`, body).then(
     (response) => {
       return response.data;

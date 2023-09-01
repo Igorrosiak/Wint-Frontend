@@ -1,7 +1,7 @@
 import { api } from '../../config/axios';
-import { User } from '../../types/user';
+import { UserResponse } from '../../types/user';
 
-export default function getUserById(id: string): Promise<User> {
+export default function getUserById(id: string): Promise<UserResponse> {
   return api.get(`user/${id}`).then(
     (response) => {
       return response.data;
