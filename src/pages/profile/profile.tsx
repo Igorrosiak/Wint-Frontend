@@ -49,7 +49,7 @@ const Profile = () => {
           <h1 className="pt-20 text-4xl text-[#2C1586] font-bold">Desculpe</h1>
           <h1 className="pt-3 px-7 text-2xl text-[#4c3c8d] text-center">
             Ocorreu um erro ao procurar o usuário. <br /> Verifique o username na barra
-            de pesquisa e recarregue a página
+            de pesquisa e recarregue a página.
           </h1>
         </section>
       )}
