@@ -2,7 +2,6 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import moment from "moment";
 import postUser from "../../services/user/postUser";
-import { UserResponse } from "../../types/user";
 import wintLogo from "../../assets/wintLogo.png";
 import "./signUp.scss";
 
@@ -23,7 +22,16 @@ const SignUp = () => {
         "error"
       );
     }
-    
+
+    const re = /\S+@\S+\.\S+/;
+    if (re.test(email) === false) {
+      return Swal.fire(
+        "Erro",
+        "O email inserido não é válido. <br /> Por favor, verifique e tente novamente.",
+        "error"
+      );
+    }
+
     const userCreated = await postUser({
       name,
       username,
@@ -33,16 +41,20 @@ const SignUp = () => {
       role: "USER",
     });
 
-    if(userCreated.id){
-      return Swal.fire(
+    if (userCreated.id) {
+      Swal.fire(
         "Sucesso",
         "Parabéns, seu usuário foi criado com sucesso.",
         "success"
       );
+
+      return setTimeout(() => {
+        window.location.assign("/");
+      }, 1500);
     } else {
-      return Swal.fire(
+      Swal.fire(
         "Erro",
-        "Desculpe, algo deu errado ao criar seu usuário... <br /> Confira os dados inseridos e tente novamente.",
+        "Desculpe, algo deu errado ao criar seu usuário... <br /> Por favor, confira os dados inseridos e tente novamente.",
         "error"
       );
     }
