@@ -1,8 +1,8 @@
 import { api } from "../../config/axios";
-import { AuthBody } from "../../types/auth";
+import { RequestAuth, ResponseAuth } from "../../types/auth";
 
-export default function postLogin(body: AuthBody): Promise<String> {
-  return api.post(`auth`, body).then(
+export default function postLogin(body: RequestAuth): Promise<ResponseAuth> {
+  return api.post(`auth/`, body).then(
     (response) => {
       return response.data;
     },
