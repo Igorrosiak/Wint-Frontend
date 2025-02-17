@@ -44,23 +44,23 @@ const SignIn = () => {
 
   return (
     <div className="sign-in-page w-[100vw] h-[100vh] overflow-hidden flex items-center justify-between bg-[#222222] text-white max-[992px]:flex-col-reverse max-[992px]:justify-center">
-      <aside className="aside-form w-2/5 mx-auto max-[992px]:w-[90vw]">
-        <h1 className="mb-3 text-6xl text-center font-normal max-[450px]:text-4xl">Bem-vindo(a)!</h1>
-        <p className="mb-7 text-xl text-center text-gray-400 max-[450px]:text-lg">
+      <aside className="aside-form w-2/5 mx-auto max-[992px]:w-[80vw]">
+        <h1 className="mb-3 text-6xl text-center font-normal max-[992px]:text-4xl min-[2000px]:text-9xl">Bem-vindo(a)!</h1>
+        <p className="mb-7 text-xl text-center text-gray-400 max-[992px]:text-lg min-[2000px]:text-3xl">
           Insira suas credenciais abaixo para conectar-se.
         </p>
-        <form className="flex flex-col max-w-xl m-auto">
-          <label htmlFor="email" className="font-semibold text-lg mb-1">
+        <form className="flex flex-col max-w-xl m-auto min-[2000px]:max-w-none">
+          <label htmlFor="email" className="font-semibold text-lg mb-1 min-[2000px]:text-3xl">
             Email
           </label>
           <input
             type="email"
             id="email"
-            placeholder="name@company.com"
+            placeholder="nome@dominio.com"
             onChange={(e) => setEmail(e.target.value)}
-            className="bg-[#383838] h-12 rounded-lg indent-3 mb-3"
+            className="bg-[#383838] h-12 rounded-lg indent-3 mb-3 max-[992px]:h-10 min-[2000px]:h-16"
           />
-          <label htmlFor="password" className="font-semibold text-lg mb-1">
+          <label htmlFor="password" className="font-semibold text-lg mb-1 min-[2000px]:text-3xl">
             Senha
           </label>
           <input
@@ -68,15 +68,15 @@ const SignIn = () => {
             id="password"
             placeholder="********"
             onChange={(e) => setPassword(e.target.value)}
-            className="bg-[#383838] h-12 rounded-lg indent-3 mb-3"
+            className="bg-[#383838] h-12 rounded-lg indent-3 mb-3 max-[992px]:h-10 min-[2000px]:h-16"
           />
           <button 
             type="button" 
             onClick={() => handleLogin()}
-            className="bg-[#652EBE] hover:bg-[#5724a7] h-14 mt-2 rounded-xl font-semibold text-xl">
+            className="bg-[#652EBE] hover:bg-[#5724a7] h-14 mt-2 rounded-xl font-semibold text-xl min-[2000px]:h-20 min-[2000px]:text-3xl">
             Login
           </button>
-          <p className="mt-4 text-center">
+          <p className="mt-4 text-center min-[2000px]:text-2xl">
             Ainda não tem uma conta?{" "}
             <a className="font-semibold" href="/sign-up">
               Registre-se aqui!
@@ -84,8 +84,8 @@ const SignIn = () => {
           </p>
         </form>
       </aside>
-      <aside className="aside-logo w-1/2 max-[992px]:w-[300px] max-[992px]:mb-4 max-[450px]:w-[250px]">
-        <img src={wintLogo} alt="Wint Logotype" />
+      <aside className="aside-logo w-1/2 max-[992px]:w-[250px] max-[992px]:mb-4">
+        <img src={wintLogo} alt="Wint Logotype" className="w-[80%] m-auto" />
       </aside>
     </div>
   );
