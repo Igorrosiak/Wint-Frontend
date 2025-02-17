@@ -7,7 +7,7 @@ export default function getUserById(id: string): Promise<UserResponse> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

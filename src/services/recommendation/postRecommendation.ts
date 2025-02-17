@@ -7,7 +7,7 @@ export default function postRecommendation(body: Recommendation): Promise<Recomm
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

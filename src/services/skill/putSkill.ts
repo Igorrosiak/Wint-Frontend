@@ -7,7 +7,7 @@ export default function putSkill(id: string, body: Skill): Promise<Skill> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

@@ -7,7 +7,7 @@ export default function postCurriculum(body: Curriculum): Promise<Curriculum> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

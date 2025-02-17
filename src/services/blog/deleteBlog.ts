@@ -6,7 +6,7 @@ export default function deleteBlog(id: string): Promise<number> {
       return response.status;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

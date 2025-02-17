@@ -7,7 +7,7 @@ export default function getUsers(): Promise<Array<UserResponse>> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

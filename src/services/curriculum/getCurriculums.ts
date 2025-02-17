@@ -7,7 +7,7 @@ export default function getCurriculums(): Promise<Array<Curriculum>> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

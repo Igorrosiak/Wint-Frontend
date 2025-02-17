@@ -7,7 +7,7 @@ export default function getWorks(): Promise<Array<Work>> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

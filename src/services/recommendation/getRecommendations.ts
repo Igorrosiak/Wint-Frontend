@@ -7,7 +7,7 @@ export default function getRecommendations(): Promise<Array<Recommendation>> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

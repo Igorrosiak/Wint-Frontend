@@ -7,7 +7,7 @@ export default function getBlogById(id: string): Promise<Blog> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

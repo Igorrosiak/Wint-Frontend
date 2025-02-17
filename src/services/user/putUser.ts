@@ -7,7 +7,7 @@ export default function putUser(id: string, body: UserRequest): Promise<UserResp
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

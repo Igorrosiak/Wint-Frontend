@@ -7,7 +7,7 @@ export default function getSkills(): Promise<Array<Skill>> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

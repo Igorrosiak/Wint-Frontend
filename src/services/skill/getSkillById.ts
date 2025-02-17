@@ -7,7 +7,7 @@ export default function getSkillById(id: string): Promise<Skill> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

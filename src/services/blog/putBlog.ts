@@ -7,7 +7,7 @@ export default function putBlog(id: string, body: Blog): Promise<Blog> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

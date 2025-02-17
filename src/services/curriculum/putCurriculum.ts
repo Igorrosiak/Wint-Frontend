@@ -7,7 +7,7 @@ export default function putCurriculum(id: string, body: Curriculum): Promise<Cur
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

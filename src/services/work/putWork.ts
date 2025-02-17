@@ -7,7 +7,7 @@ export default function putWork(id: string, body: Work): Promise<Work> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

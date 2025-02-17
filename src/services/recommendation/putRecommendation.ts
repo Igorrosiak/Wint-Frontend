@@ -7,7 +7,7 @@ export default function putRecommendation(id: string, body: Recommendation): Pro
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

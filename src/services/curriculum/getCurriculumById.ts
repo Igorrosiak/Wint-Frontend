@@ -7,7 +7,7 @@ export default function getCurriculumById(id: string): Promise<Curriculum> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

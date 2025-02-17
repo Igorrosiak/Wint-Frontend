@@ -7,7 +7,7 @@ export default function postLogin(body: RequestAuth): Promise<ResponseAuth> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

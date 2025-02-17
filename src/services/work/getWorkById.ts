@@ -7,7 +7,7 @@ export default function getWorkById(id: string): Promise<Work> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

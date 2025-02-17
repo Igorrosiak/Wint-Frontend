@@ -7,7 +7,7 @@ export default function getUserByUsername(username: string): Promise<UserRespons
       return response.data;
     },
     (error) => {
-      return error.name;
+      return error;
     }
   );
 }

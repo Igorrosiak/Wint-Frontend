@@ -7,7 +7,7 @@ export default function getRecommendationById(id: string): Promise<Recommendatio
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

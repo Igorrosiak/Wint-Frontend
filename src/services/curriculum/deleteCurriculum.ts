@@ -6,7 +6,7 @@ export default function deleteCurriculum(id: string): Promise<number> {
       return response.status;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }

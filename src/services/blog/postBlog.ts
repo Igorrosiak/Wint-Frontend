@@ -7,7 +7,7 @@ export default function postBlog(body: Blog): Promise<Blog> {
       return response.data;
     },
     (error) => {
-      return error.response.status;
+      return error;
     }
   );
 }
