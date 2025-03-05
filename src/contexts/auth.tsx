@@ -4,44 +4,73 @@ import React, {
   SetStateAction,
   createContext,
   useContext,
+  useEffect,
   useState,
 } from "react";
-import { UserResponse } from "../types/user";
+import getToken from "../services/auth/refreshToken";
+import Swal from "sweetalert2";
 
 interface PropsWithReactNode {
   children?: React.ReactNode;
 }
 
-interface UserContextData {
+interface AuthContextData {
   loggedStatus?: boolean;
-  user?: UserResponse;
   setLoggedStatus: React.Dispatch<SetStateAction<boolean>>;
-  setUser: React.Dispatch<SetStateAction<UserResponse | undefined>>;
+  accessToken?: string;
+  setAccessToken: React.Dispatch<SetStateAction<string | undefined>>;
+  refreshToken: null | string;
+  setRefreshToken: React.Dispatch<SetStateAction<null | string>>;
 }
 
-export const UserContext = createContext({} as UserContextData);
+export const AuthContext = createContext({} as AuthContextData);
 
-export const useUserContext = () => {
-  return useContext(UserContext);
+export const useAuthContext = () => {
+  return useContext(AuthContext);
 };
 
-export const UserProvider: FC<PropsWithChildren<PropsWithReactNode>> = ({
+export const AuthProvider: FC<PropsWithChildren<PropsWithReactNode>> = ({
   children,
 }) => {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")!));
   const status = localStorage.getItem("loggedStatusVariable");
   const [loggedStatus, setLoggedStatus] = useState<boolean>(!!status);
+  const [accessToken, setAccessToken] = useState<string>();
+  const [refreshToken, setRefreshToken] = useState<null | string>(
+    localStorage.getItem("refreshToken")
+  );
+
+  async function getAccessToken() {
+    if (!accessToken && refreshToken) {
+      const accessToken = await getToken(refreshToken);
+      setAccessToken(accessToken);
+    } else if (!accessToken && !refreshToken && loggedStatus) {
+      setLoggedStatus(false);
+      localStorage.clear();
+      Swal.fire(
+        "Token Expirou",
+        "Seu token foi expirado, será necessário fazer login novamente.",
+        "warning"
+      );
+      setTimeout(() => window.location.assign("/"), 3000);
+    }
+  }
+
+  useEffect(() => {
+    getAccessToken();
+  }, []);
 
   return (
-    <UserContext.Provider
+    <AuthContext.Provider
       value={{
         loggedStatus,
         setLoggedStatus,
-        user,
-        setUser,
+        accessToken,
+        setAccessToken,
+        refreshToken,
+        setRefreshToken,
       }}
     >
       {children}
-    </UserContext.Provider>
+    </AuthContext.Provider>
   );
 };
