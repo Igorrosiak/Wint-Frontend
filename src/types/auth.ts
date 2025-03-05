@@ -1,8 +1,12 @@
+import { UserResponse } from "./user";
+
 export type RequestAuth = {
   email: string;
   password: string;
 };
 
 export type ResponseAuth = {
-  token: string;
+  accessToken: string;
+  refreshToken: string;
+  user: UserResponse;
 };
